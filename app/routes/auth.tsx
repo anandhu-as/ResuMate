@@ -12,8 +12,8 @@ const auth = () => {
         auth.isAuthenticated && navigate(next)
     }, [auth.isAuthenticated, next])
     return (
-        <main className="bg-[url('/images/bg-auth.svg')] bg-cover min-h-screen flex items-center justify-center">
-            <div className="gradient-border shadow-lg">
+        <main className="bg-neutral-50 min-h-screen flex items-center justify-center">
+            <div className="border border-neutral-200 rounded-2xl">
                 <section className="flex flex-col gap-8 bg-white rounded-2xl p-10">
                     <div className="flex flex-col items-center gap-2 text-center">
                         <h1>Welcome</h1>
