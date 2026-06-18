@@ -3,8 +3,7 @@ import NavBar from "~/components/NavBar";
 
 const upload = () => {
     const [isProcessing, SetIsProcessiing] = useState(false);
-    const [statusText, setStatusText] = useState('');
-    const handleSubmit=(event:FormEvent<HTMLFormElement>)=>{}
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => { }
     return (
         <main className="bg-home">
             <NavBar />
@@ -20,7 +19,7 @@ const upload = () => {
                         <h2>Drop your resume for an ATS score and imporovement tips</h2>
                     )}
                     {!isProcessing && (<>
-                      <form id="upload-form" onSubmit={handleSubmit} className="flex flex-col gap-4 mt-8">
+                        <form id="upload-form" onSubmit={handleSubmit} className="flex flex-col gap-4 mt-8">
                             <div className="form-div">
                                 <label htmlFor="company-name">Company Name</label>
                                 <input type="text" name="company-name" placeholder="Company Name" id="company-name" />
@@ -36,7 +35,7 @@ const upload = () => {
 
                             <div className="form-div">
                                 <label htmlFor="uploader">Upload Resume</label>
-                               
+
                             </div>
 
                             <button className="primary-button" type="submit">
